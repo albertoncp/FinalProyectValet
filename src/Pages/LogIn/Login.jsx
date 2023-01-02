@@ -3,9 +3,11 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
+
 import {loginUser} from "../../redux/auth/auth.funtion"
 import { API } from "../../Shared/Services/api";
 import Navbar from '../../Components/Navbar 1/Navbar1'
+import NavbarBueno from "../../Components/NavbarBueno/NavbarBueno";
 import "./Login.scss"
 const Login = () => {
   const { register, handleSubmit, formState: {errors, isValid}} = useForm();
@@ -24,7 +26,7 @@ const login = async(formadata) =>{
 
   return (
     <div>
-    <Navbar styles='navbar_input--hidden'/>
+    <NavbarBueno />
     <form className="formLogin" onSubmit={handleSubmit(login)}>
     <h4> Inicia Sesión</h4>
     <h4> ¡Bienvenido de nuevo a Valet!</h4>

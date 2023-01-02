@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { newUser } from "../../redux/auth/auth.funtion";
 import Navbar from '../../Components/Navbar 1/Navbar1'
 import "./Register.scss"
+import NavbarBueno from "../../Components/NavbarBueno/NavbarBueno";
 const Register = () => {
   const { register, handleSubmit, formState: {errors, isValid}} = useForm();
   let navigate = useNavigate();
@@ -26,7 +27,7 @@ const Register = () => {
 
   return (
     <div>
-    <Navbar styles='navbar_input--hidden'/>
+    <NavbarBueno/>
     <form className="formRegister" onSubmit={handleSubmit(userRegister)}>
     <h4> Regístrate</h4>
     <h4> ¡Te damos la Bienvenida a Valet!</h4>
