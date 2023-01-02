@@ -1,0 +1,392 @@
+@font-face{
+    font-family: circular;
+    src: url("../../../public/assets/AvenirLTStd-Black.otf")
+}
+div{
+    .toggle{
+        cursor: pointer;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        padding: 10px;
+        background-color: black;
+    }
+    font-family: circular;
+    p{
+        margin: 0px;
+    }
+    
+        .parkings{
+            
+            display: flex;
+           
+            flex-wrap: wrap;
+            
+            gap: 40px;
+            .scale{
+                transform: translate(scale(1));
+            }
+            .card{
+                
+                
+                
+                width: 20%;
+                height: 300px;
+                border-radius: 10px;
+                padding: 5px;
+                margin-bottom: 60px;
+
+                .imageContainer{
+                    position: relative;
+                    height: 100%;
+                    .heartIcon{
+                        color: white;
+                        font-size: 1rem;
+                        cursor: pointer;
+                        top:8%;
+                        right: 6%;
+                        width: 2rem;
+                        height: 2rem;
+                        position: absolute;
+                    }
+                }
+                
+               
+                .button{
+                    button{
+                        cursor: pointer;
+                        font-family: circular;
+                        padding: 10px;
+                        border: none;
+                        border-radius: 15px;
+                    }
+                    display: flex;
+                    justify-content: center;
+                }
+
+                .park-libre{
+                    color: rgb(6, 199, 6);
+                    font-family: 'Kanit', sans-serif;
+                    #park-p{
+                        color: black;
+                        display: inline;
+                        font-size: 1rem;
+                        margin-right: 1%;
+                    }
+                }
+                .park-ocupado{
+                    color: red;
+                    font-family: 'Kanit', sans-serif;
+                    #park-p{
+                        color: black;
+                        display: inline;
+                        font-size: 1rem;
+                        margin-right: 1%;
+                    }
+                }
+                .park-adress{
+                    margin-top: 5px;
+                }
+                .park-price{
+                   color: grey;
+                }
+                .park-size{
+                    font-family: 'Kanit', sans-serif;
+                }
+                h2{
+                    font-size: 20px;
+                    text-align: center;
+                    font-family: 'Kanit', sans-serif;
+                    font-weight: 800;
+                }
+                img{
+                    border-radius: 20px;
+                    margin-top: 10px;
+                    width: 250px;
+                    height: 200px;
+                    max-height: 300px;
+                    
+                    
+                }
+                
+            }
+            .card::-webkit-scrollbar {
+                width: 0px;
+            }
+            .card:hover{
+                
+                
+            }
+            .camion{
+                
+            }
+            .furgoneta{
+                
+            }
+            .moto{
+                
+            }
+            .turismo{
+                
+            }
+            .caravana{
+                
+            }
+        }
+    }
+
+
+.buttonShow {
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1vw;
+    background-color: rgb(104, 99, 99);
+    color: #ffffff;
+    height: 3vw;
+
+}
+
+.darkMode {
+    background-color: #1a1a1a;
+    color: white;
+  }
+
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    @font-face{
+        font-family: circular;
+        src: url("../../../public/assets/AvenirLTStd-Black.otf")
+    }
+    div{
+        
+        font-family: circular;
+        
+        .body-home{
+            
+            .parkings{
+                
+                display: flex;
+               justify-content: center;
+                flex-wrap: wrap;
+                
+                gap: 40px;
+                .scale{
+                    transform: translate(scale(1));
+                }
+                .card{
+                    
+                    
+                    width: 80%;
+                    height: 300px;
+                    border-radius: 10px;
+                    padding: 5px;
+
+                    .imageContainer{
+                        position: relative;
+                        .heartIcon{
+                            font-size: 1rem;
+                            color: white;
+                            cursor: pointer;
+                            top:8%;
+                            right: 6%;
+                            width: 2rem;
+                            height: 2rem;
+                            position: absolute;
+                        }
+                    }
+                    
+                    img{
+                        width: 100%;
+                        height: 90%;
+                    }
+    
+                    .button{
+                        button{
+                            top: 20%;
+                            position: absolute;
+                            cursor: pointer;
+                            font-family: circular;
+                            padding: 10px;
+                            border: none;
+                            border-radius: 15px;
+                            
+                        }
+                        display: flex;
+                        
+                    }
+    
+                   
+                }
+            }
+        }
+    }
+    
+    .buttonShow {
+    
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1vw;
+        background-color: rgb(104, 99, 99);
+        color: #ffffff;
+        height: 3vw;
+    
+    }
+    
+    .darkMode {
+        background-color: #1a1a1a;
+        color: white;
+      }
+    
+  }
+
+  
+//For tablet
+@media only screen and (min-width: 628px) {
+    @font-face{
+        font-family: circular;
+        src: url("../../../public/assets/AvenirLTStd-Black.otf")
+    }
+    div{
+        
+        font-family: circular;
+        
+        .body-home{
+            
+            .parkings{
+                
+                display: flex;
+               justify-content: center;
+                flex-wrap: wrap;
+                
+                gap: 40px;
+                .scale{
+                    transform: translate(scale(1));
+                }
+                .card{
+                    
+                    
+                    width: 40%;
+                    height: 300px;
+                    border-radius: 10px;
+                    padding: 5px;
+                    margin-bottom: 10rem;
+
+                    .imageContiner{
+                        position: relative;
+                        height: 100%;
+                        .heartIcon{
+                            font-size: 1rem;
+                            color: white;
+                            cursor: pointer;
+                            top:8%;
+                            right: 6%;
+                            width: 2rem;
+                            height: 2rem;
+                            position: absolute;
+                        }
+                        
+                    }
+                    
+                    img{
+                        width: 100%;
+                        height: 250px;
+                    }
+    
+                    .button{
+                        button{
+                            top: 20%;
+                            position: absolute;
+                            cursor: pointer;
+                            font-family: circular;
+                            padding: 10px;
+                            border: none;
+                            border-radius: 15px;
+                        }
+                        display: flex;
+                        justify-content: center;
+                    }
+    
+                   
+                }
+            }
+        }
+    }
+    
+}
+
+// For desktop
+@media only screen and (min-width: 992px){
+    @font-face{
+        font-family: circular;
+        src: url("../../../public/assets/AvenirLTStd-Black.otf")
+    }
+    div{
+        
+        font-family: circular;
+        
+        .body-home{
+            
+            .parkings{
+                
+                display: flex;
+               justify-content: center;
+                flex-wrap: wrap;
+                
+                gap: 40px;
+                .scale{
+                    transform: translate(scale(1));
+                }
+                .card{
+                    
+                    
+                    width: 20%;
+                    height: 300px;
+                    border-radius: 10px;
+                    padding: 5px;
+                    margin-bottom: 10rem;
+
+                    .imageContainer{
+                        position: relative;
+                        height: 100%;
+                        .heartIcon{
+                            font-size: 1rem;
+                            color: white;
+                            cursor: pointer;
+                            top:8%;
+                            right: 6%;
+                            width: 2rem;
+                            height: 2rem;
+                            position: absolute;
+                        }
+                    }
+                    
+                    img{
+                        width: 100%;
+                        height: 90%;
+                    }
+    
+                    .button{
+                        button{
+                            top: 20%;
+                            position:absolute;
+                            cursor: pointer;
+                            font-family: circular;
+                            padding: 10px;
+                            border: none;
+                            border-radius: 15px;
+                        }
+                        display: flex;
+                        justify-content: center;
+                    }
+    
+                   
+                }
+            }
+        }
+    }
+}

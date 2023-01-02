@@ -1,0 +1,76 @@
+
+
+    
+    nav{
+        background-color: white;
+        position: fixed;
+        display: flex;
+        width: 100vw;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        border-bottom: 1.4px solid rgb(231, 228, 228);
+        img{
+           
+        }
+        .searchIcon{
+            
+            
+        }
+        
+        label{
+            font-weight: 600;
+            input{
+            height: 20px;
+        }
+            .navbar_input{
+            width: 50vw;
+            
+            padding: 10px;
+            border:1px solid  rgb(231, 228, 228);
+            border-radius: 25px;
+        }
+            .navbar_input:hover{
+            border: 1.5px solid black ;
+            
+        }
+            .navbar_input--hidden{
+                display: none;
+                visibility: hidden
+                
+            }
+        }
+        
+        ::placeholder {
+            text-align: center; 
+         }
+        .Hamburguermenu{
+            height: 46px;
+            width: 50px;
+            cursor:pointer
+            
+        }
+        .imgNav{
+            top: 15px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        .darkImgNav {
+            top: 15px;
+            height: 40px;
+            cursor: pointer;
+            -webkit-filter: invert(100%);
+            filter: invert(100%);
+          }
+        .login{
+            
+            .profile{
+                
+                cursor: pointer;
+                border-radius: 20px;
+                width: 50px;
+            }
+        }
+        
+    } 

@@ -1,0 +1,18 @@
+.filterContainer{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 10px;
+    .carFilter{
+        cursor: pointer;
+        gap: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color:rgb(198,198,198)
+        
+    }
+    .carFilter:hover{
+        color: black
+    }
+}

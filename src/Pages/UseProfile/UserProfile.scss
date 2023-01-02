@@ -1,0 +1,87 @@
+.UserProfile__Container{
+    padding-top: 85px;
+    display: grid;
+    grid-template-areas: 
+    'info book book book book'
+    ;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    .Info__Container{
+        height: 85vh;
+        border-right: solid black 2px;
+        border-bottom: solid black 2px;
+        grid-area: info;
+        .PP__Container{
+            
+            width: 250px;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .UserProfile_PP{
+                
+                width: 50%;
+                height: 50%;
+                border-radius: 100%;
+            }
+        }
+        .Pinfo_Container{
+            
+            display: flex;
+            height: 20vh;
+            width: 250px;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+            p{
+                margin-left: 25px;
+            }
+        }
+    }
+    .Bookings__Parkings__Container{
+        border-bottom: 1px solid black;
+        grid-area: book;
+        height: 85vh;
+        width: 100%;
+        .Bookings__Container{
+            height: 50%;
+            border-bottom: 1px solid black;
+            .bookTitle{
+                display: flex;
+                justify-content: center;
+            }
+            .garageContainer{
+                border-radius: 20px;
+                border: 2px solid rgb(137, 137, 253);
+                display: flex;
+                justify-content: center;
+            }
+            .parkin{
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 2px solid rgb(178, 178, 248);
+                border-radius: 20px;
+            }
+       
+        }
+        .Parkings__Container{
+            height: 50%;
+            .rentTitle{
+                display: flex;
+                justify-content: center;
+                
+            }
+            .alquiler{
+                display: flex;
+                justify-content: center;
+                border: 2px solid black;
+                border-radius: 20px;
+                
+            }
+        }
+    }
+}
+
+
+
