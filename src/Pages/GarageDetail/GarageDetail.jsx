@@ -27,7 +27,7 @@ const GarageDetail = () => {
 
   useEffect(() => {
     const getGarage = async () => {
-      const res = await axios.get(`http://localhost:5000/parkings/${id}`);
+      const res = await axios.get(`https://final-back.vercel.app/parkings/${id}`);
 
       setgarage(res.data);
     };
