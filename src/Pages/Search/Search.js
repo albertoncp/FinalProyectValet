@@ -9,6 +9,7 @@ import "./Search.scss"
 import { getParkings } from '../../redux/Parkings/parkings.function'
 import Swal from 'sweetalert2'
 import { postNewBooking } from '../../redux/newBooking/newBooking.functions'
+import { AiOutlineHeart } from 'react-icons/ai';
 
 const Search = () => {
   const dispatch = useDispatch([]);
@@ -53,8 +54,9 @@ const Search = () => {
                     </Link>
                     {user && (
                             <div className="button">
-                                <img onClick={() => postBooking(park)} className="heartIcon" src="https://www.iconpacks.net/icons/2/free-heart-icon-3510-thumb.png" ></img>
-                                
+                                <AiOutlineHeart onClick={() => postBooking(park)} className="heartIcon" />
+                                {/* <img onClick={() => postBooking(park)} className="heartIcon" src="https://www.iconpacks.net/icons/2/free-heart-icon-3510-thumb.png" ></img>
+                                 */}
                             </div>
                         )}
                     </div>
@@ -67,6 +69,7 @@ const Search = () => {
                         </div>
                        
                     </div>
+                    
                     
                     
                 ))}

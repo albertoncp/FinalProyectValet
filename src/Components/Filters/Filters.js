@@ -23,8 +23,8 @@ const Filters = () => {
     const [clicked, setclicked] = useState(true)
   return (
     <div className='filterContainer' >
-    <div  className='carFilter' >
-        <AiFillCar onClick={() => dispatch(filterParkings3(clicked)) } />
+    <div onClick={() => dispatch(filterParkings3(clicked)) }  className='carFilter' >
+        <AiFillCar  />
         <p>Coche</p>
     </div>
     <div onClick={() => dispatch(filterParkings2(clicked)) } className='carFilter' >
